@@ -20,7 +20,7 @@ public:
                 }
             }
             else {
-                if (target >= nums[l] || target < nums[m]) {
+                if (target > nums[r] || target < nums[m]) {
                     r = m - 1;
                 }
                 else {
