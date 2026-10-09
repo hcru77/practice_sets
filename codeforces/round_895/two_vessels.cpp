@@ -11,8 +11,14 @@ const ll MOD = 1e9 + 7;
 
 void solve() {
     int t; cin >> t;
-    for (int k = 0; k < t; k++) {
+    for (int i = 0; i < t; i++) {
+        int a, b, c; cin >> a >> b >> c;
+        
+        int diff = abs(a - b);
+        int divnd = (diff + 1) / 2;
+        int res = (divnd + c - 1) / c;
 
+        cout << res << "\n";
     }
 }
 

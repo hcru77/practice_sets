@@ -11,8 +11,24 @@ const ll MOD = 1e9 + 7;
 
 void solve() {
     int t; cin >> t;
-    for (int k = 0; k < t; k++) {
 
+    for (int i = 0; i < t; i++) {
+        int n; cin >> n;
+        unordered_set<int> trk;
+        for (int j = 0; j < n; j++) {
+            int c; cin >> c;
+
+            if (trk.count(c)) {
+                std::cout << "NO\n";
+                break;
+            }
+            else {
+                trk.insert(c);
+            }
+        }
+        if (trk.size() == n) {
+            std::cout << "YES\n";
+        }
     }
 }
 
